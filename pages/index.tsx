@@ -1,6 +1,8 @@
-import Header from "@/components/Header"
-import type { NextPage   } from "next"
-import Head from "next/head"
+
+import type { NextPage   } from "next";
+import Head from "next/head";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 
 
 
@@ -10,10 +12,25 @@ const Home: NextPage = () => {
 
       <Head>
        <title> Lucas Portfolio </title>
-
       </Head>
 
       <Header/>
+
+      <section id="hero">
+        <Hero />
+         </section>
+
+      {/* Hero */}
+
+      {/* About  */}
+
+      {/* Experience  */}
+
+      {/* Skills  */}
+
+      {/* Project  */}
+
+      {/* Contact Me  */}
      
 
 
