@@ -8,13 +8,15 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
+import Link from "next/link";
 
 
 
 const Home: NextPage = () => {
   return (
     <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-mandatory
-    overflow-y-scroll overflow-x-hidden z-0">
+    overflow-y-scroll overflow-x-hidden z-0 
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7Ab0A]/80">
 
       <Head>
        <title> Lucas Portfolio </title>
@@ -46,6 +48,17 @@ const Home: NextPage = () => {
      <section id="contact" className="snap-start">
       <ContactMe />
      </section>
+
+     <Link href={"#hero"}>
+     <footer className="sticky bottom-5 w-full cursor-pointer">
+      <div className="flex items-center justify-center">
+        <img 
+        className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+        src="lucas.jpeg" alt="" />
+      </div>
+     </footer>
+     
+     </Link>
 
 
     </div>
